@@ -51,6 +51,7 @@ jobs:
       with:
         timeout_minutes: 10
         max_attempts: 5
+        retry_wait_seconds: 30
         command: python3 generate_images.py
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
