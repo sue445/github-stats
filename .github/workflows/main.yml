@@ -47,7 +47,7 @@ jobs:
 
     # Generate all statistics images
     - name: Generate images
-      uses: nick-fields/retry@v2 # FIXME: Auto retry when generate_images is failed
+      uses: nick-fields/retry@v3 # FIXME: Auto retry when generate_images is failed
       with:
         timeout_minutes: 10
         max_attempts: 10
