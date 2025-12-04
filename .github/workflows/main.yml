@@ -36,7 +36,7 @@ jobs:
     - name: Generate images
       uses: nick-fields/retry@v3 # FIXME: Auto retry when generate_images is failed
       with:
-        timeout_minutes: 10
+        timeout_minutes: 20
         max_attempts: 10
         retry_wait_seconds: 60
         command: python3 generate_images.py
